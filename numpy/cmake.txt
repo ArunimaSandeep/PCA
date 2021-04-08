@@ -1,0 +1,4 @@
+make: runs commands
+CMakeLists.txt : top level file
+cmake -S {source} -B {build folder} :  not in the same place
+source : directory of CMakeLists.txt
