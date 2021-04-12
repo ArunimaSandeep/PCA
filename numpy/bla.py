@@ -7,7 +7,13 @@ fmt='%1.2f','%d'
 
 # Directory='A'
 
-np.savetxt('/home/user/Desktop/numpy/A/a_6.txt', x, fmt=fmt,delimiter=',')
+
+
+np.savetxt('/home/user/github/PCA/numpy/A/a_21.txt', x, fmt=fmt,delimiter=',')
 # print("After loading, content of the text file:")
-# result = np.loadtxt('a_2.txt')
-# print(result)
+result = np.loadtxt('a_2.txt')
+print(result)
+
+# /home/user/github/PCA
+# /home/user/Desktop/numpy
+# /home/user/github/PCA/numpy/bla.py

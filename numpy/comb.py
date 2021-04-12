@@ -1,7 +1,9 @@
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-a=[[6.8,50],[2.87,46],[3.8,30],[4.9,29],[5.53,38]]
+a=np.loadtxt('/home/user/github/PCA/numpy/A/a_2.txt',delimiter=',',)
+
+print(a)
 
 
 l = []
@@ -13,8 +15,8 @@ for j in range(0,len(a)):
     l.append(float(a[j][0]))
     i.append((a[j][1]))
     # print(i)
-# print(l)
-# print(i)
+print(l)
+print(i)
 
 
 for j in range(0,len(l)):
@@ -113,16 +115,19 @@ for i in range(0,4):
     # print(spec[0,M[i]:N[i]].shape)
     spec[0,M[i]:N[i]]=spec[0,M[i]:N[i]]+Intensity_t[i,:]
 
-print(spec.shape)
+# print(spec.shape)
 x = np.array([i for i in range(0,p)])
-print(x.shape)
+# print(x.shape)
 
-total = np.vstack((x.reshape(1,-1),spec))
-print(total.T.shape)
-total = total.T
-np.savetxt("data.csv", total, delimiter=",")
+# total = np.vstack((x.reshape(1,-1),spec))
+# print(total.T.shape)
+# total = total.T
+# np.savetxt("data.csv", total, delimiter=",")
 # sns.lineplot(x.reshape(1,-1),spec)
 # plt.show()
+
+# plt.plot(x,spec)
+# plt.show
 
 
 
