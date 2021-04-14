@@ -11,8 +11,8 @@ fmt='%1.2f','%d'
 
 np.savetxt('/home/user/github/PCA/numpy/A/a_21.txt', x, fmt=fmt,delimiter=',')
 # print("After loading, content of the text file:")
-result = np.loadtxt('a_2.txt')
-print(result)
+# result = np.loadtxt('a_21.txt')
+# print(result)
 
 # /home/user/github/PCA
 # /home/user/Desktop/numpy

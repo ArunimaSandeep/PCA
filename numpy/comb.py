@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 a=np.loadtxt('/home/user/github/PCA/numpy/A/a_2.txt',delimiter=',',)
 
-print(a)
+# print(a)
 
 
 l = []
@@ -15,8 +15,8 @@ for j in range(0,len(a)):
     l.append(float(a[j][0]))
     i.append((a[j][1]))
     # print(i)
-print(l)
-print(i)
+# print(l)
+# print(i)
 
 
 for j in range(0,len(l)):
@@ -95,29 +95,32 @@ Intensity_t=np.transpose(Intensity)
 # print(Intensity_t.shape)
 #
 #
-Intensity_f=Intensity_t.reshape(1,-1)
+# Intensity_f=Intensity_t.reshape(1,-1)
 # print(Intensity_f.shape)
+# #
+# c=[]
 #
-c=[]
-
-count =0
-while (count < len(Intensity_f)+1):
-
-    c.append(count)
-    count = count + 20
+# count =0
+# while (count < len(Intensity_f)+1):
+#
+#     c.append(count)
+#     count = count + 20
 # print(spec[0,5:10].shape)
 #
 # print(M)
 # print(N)
 
 for i in range(0,4):
-    print(M[i],N[i])
+    # print(M[i]-N[i])
     # print(spec[0,M[i]:N[i]].shape)
     spec[0,M[i]:N[i]]=spec[0,M[i]:N[i]]+Intensity_t[i,:]
 
 # print(spec.shape)
 x = np.array([i for i in range(0,p)])
 # print(x.shape)
+
+x_t=x.reshape(1,-1)
+# print(x_t.shape)
 
 # total = np.vstack((x.reshape(1,-1),spec))
 # print(total.T.shape)
@@ -126,8 +129,8 @@ x = np.array([i for i in range(0,p)])
 # sns.lineplot(x.reshape(1,-1),spec)
 # plt.show()
 
-# plt.plot(x,spec)
-# plt.show
+plt.plot(x_t,spec)
+plt.show
 
 
 
