@@ -25,10 +25,10 @@ for j in X:
     for k in x:
         x=X+x
 
-if x==X+x:
-    print(x)
-else:
-    print(0)
+# if x==X+x:
+#     print(x)
+# else:
+#     print(0)
 
 
 # plt.plot(x,y)
